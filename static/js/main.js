@@ -1,130 +1,132 @@
-/* ==========================================================================
-   Page Loader
-   ========================================================================== */
-   $(window).load(function() {
-    "use strict";
-    $('#loader').fadeOut();
-   });
+(function ($) {
+  "use strict";
 
-
-/* ==========================================================================
-   CounterUp
-   ========================================================================== */
-  jQuery(document).ready(function( $ ) {
-    $('.counter').counterUp({
-      delay: 1,
-      time: 500
-    });
-  });
-
-  /* slicknav mobile menu active  */
-  $('.mobile-menu').slicknav({
-      prependTo: '.navbar-header',
-      parentTag: 'liner',
-      allowParentLinks: true,
-      duplicate: true,
-      label: '',
-      closedSymbol: '<i class="icon-arrow-right"></i>',
-      openedSymbol: '<i class="icon-arrow-down"></i>',
-    });
-
-/* ==========================================================================
-   MixitUp
-   ========================================================================== */
-  $(function(){
-    $('#portfolio').mixItUp();
-  });
-
-/* ==========================================================================
-   Carousel Main Slider
-   ========================================================================== */
-$(".carousel-slider").owlCarousel({
-    navigation: true,
-    pagination: false,
-    slideSpeed: 1000,
-    stopOnHover: true,
-    autoPlay: true,
-    items: 1,
-    itemsDesktopSmall: [1024, 1],
-    itemsTablet: [600, 1],
-    itemsMobile: [479, 1]
-});
-
-/* ==========================================================================
-   Touch Owl Carousel
-   ========================================================================== */
-$(".touch-slider").owlCarousel({
-    navigation: true,
-    pagination: false,
-    slideSpeed: 1000,
-    stopOnHover: true,
-    autoPlay: true,
-    items: 1,
-    itemsDesktopSmall: [1024, 1],
-    itemsTablet: [600, 1],
-    itemsMobile: [479, 1]
-});
-
-$('.touch-slider').find('.owl-prev').html('<i class="icon-arrow-left"></i>');
-$('.touch-slider').find('.owl-next').html('<i class="icon-arrow-right"></i>');
-
-$('.carousel-slider').find('.owl-prev').html('<i class="icon-arrow-left"></i>');
-$('.carousel-slider').find('.owl-next').html('<i class="icon-arrow-right"></i>');
-
-$(window).on('scroll', function() {
-    if ($(window).scrollTop() > 20) {
-        $('.header-top-area').addClass('menu-bg');
-    } else {
-        $('.header-top-area').removeClass('menu-bg');
+  // Preloader (if the #preloader div exists)
+  $(window).on('load', function () {
+    if ($('#preloader').length) {
+      $('#preloader').delay(100).fadeOut('slow', function () {
+        $(this).remove();
+      });
     }
-});
+  });
 
-/* ==========================================================================
-   Back Top Link
-   ========================================================================== */
-  var offset = 200;
-  var duration = 500;
+  // Back to top button
   $(window).scroll(function() {
-    if ($(this).scrollTop() > offset) {
-      $('.back-to-top').fadeIn(400);
+    if ($(this).scrollTop() > 100) {
+      $('.back-to-top').fadeIn('slow');
     } else {
-      $('.back-to-top').fadeOut(400);
+      $('.back-to-top').fadeOut('slow');
     }
   });
-  $('.back-to-top').click(function(event) {
-    event.preventDefault();
-    $('html, body').animate({
-      scrollTop: 0
-    }, 600);
+  $('.back-to-top').click(function(){
+    $('html, body').animate({scrollTop : 0},1500, 'easeInOutExpo');
     return false;
-  })
-
-  jQuery(function($) {
-
-      //Initiat WOW JS
-      new WOW().init();
-
-      // one page navigation 
-      $('.main-navigation').onePageNav({
-              currentClass: 'active'
-      });
-
-      
   });
 
-  jQuery(document).ready(function() {
-     
-      $('body').scrollspy({
-          target: '.navbar-collapse',
-          offset: 195
-      });
+  // Initiate the wowjs animation library
+  new WOW().init();
 
-      $(window).on('scroll', function() {
-          if ($(window).scrollTop() > 200) {
-              $('.fixed-top').addClass('menu-bg');
-          } else {
-              $('.fixed-top').removeClass('menu-bg');
+  // Header scroll class
+  $(window).scroll(function() {
+    if ($(this).scrollTop() > 100) {
+      $('#header').addClass('header-scrolled');
+    } else {
+      $('#header').removeClass('header-scrolled');
+    }
+  });
+
+  if ($(window).scrollTop() > 100) {
+    $('#header').addClass('header-scrolled');
+  }
+
+  // Smooth scroll for the navigation and links with .scrollto classes
+  $('.main-nav a, .mobile-nav a, .scrollto').on('click', function() {
+    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      if (target.length) {
+        var top_space = 0;
+
+        if ($('#header').length) {
+          top_space = $('#header').outerHeight();
+
+          if (! $('#header').hasClass('header-scrolled')) {
+            top_space = top_space - 40;
           }
-      });
+        }
 
+        $('html, body').animate({
+          scrollTop: target.offset().top - top_space
+        }, 1500, 'easeInOutExpo');
+
+        if ($(this).parents('.main-nav, .mobile-nav').length) {
+          $('.main-nav .active, .mobile-nav .active').removeClass('active');
+          $(this).closest('li').addClass('active');
+        }
+
+        if ($('body').hasClass('mobile-nav-active')) {
+          $('body').removeClass('mobile-nav-active');
+          $('.mobile-nav-toggle i').toggleClass('fa-times fa-bars');
+          $('.mobile-nav-overly').fadeOut();
+        }
+        return false;
+      }
+    }
   });
+
+  // Navigation active state on scroll
+  var nav_sections = $('section');
+  var main_nav = $('.main-nav, .mobile-nav');
+  var main_nav_height = $('#header').outerHeight();
+
+  $(window).on('scroll', function () {
+    var cur_pos = $(this).scrollTop();
+  
+    nav_sections.each(function() {
+      var top = $(this).offset().top - main_nav_height,
+          bottom = top + $(this).outerHeight();
+  
+      if (cur_pos >= top && cur_pos <= bottom) {
+        main_nav.find('li').removeClass('active');
+        main_nav.find('a[href="#'+$(this).attr('id')+'"]').parent('li').addClass('active');
+      }
+    });
+  });
+
+  // jQuery counterUp (used in Whu Us section)
+  $('[data-toggle="counter-up"]').counterUp({
+    delay: 10,
+    time: 1000
+  });
+
+  // Porfolio isotope and filter
+  $(window).on('load', function () {
+    var portfolioIsotope = $('.portfolio-container').isotope({
+      itemSelector: '.portfolio-item'
+    });
+    $('#portfolio-flters li').on( 'click', function() {
+      $("#portfolio-flters li").removeClass('filter-active');
+      $(this).addClass('filter-active');
+  
+      portfolioIsotope.isotope({ filter: $(this).data('filter') });
+    });
+  });
+
+  // Testimonials carousel (uses the Owl Carousel library)
+  $(".testimonials-carousel").owlCarousel({
+    autoplay: true,
+    dots: true,
+    loop: true,
+    items: 1
+  });
+
+  // Clients carousel (uses the Owl Carousel library)
+  $(".clients-carousel").owlCarousel({
+    autoplay: true,
+    dots: true,
+    loop: true,
+    responsive: { 0: { items: 2 }, 768: { items: 4 }, 900: { items: 6 }
+    }
+  });
+
+})(jQuery);
+

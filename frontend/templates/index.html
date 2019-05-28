@@ -1,552 +1,780 @@
 {% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="keywords" content="Bootstrap, Landing page, Template, Registration, Landing">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta name="author" content="Grayrids">
-    <title>DEMA Cleaning</title>
+<head>
+  <meta charset="utf-8">
+  <title>DemaCleaning</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
 
-    <!-- Bootstrap CSS -->
-    <!-- {% static "/assets/vendor/bootstrap/css/bootstrap.min.css" %} -->
-    <link rel="stylesheet" href="{% static "css/bootstrap.min.css" %}">
-    <link rel="stylesheet" href="{% static "css/font-awesome.min.css" %}">
-    <link rel="stylesheet" href="{% static "css/simple-line-icons.css" %}">
-    <link rel="stylesheet" href="{% static "css/slicknav.css" %}">
-    <link rel="stylesheet" href="{% static "css/owl.carousel.css" %}">
-    <link rel="stylesheet" href="{% static "css/owl.theme.css" %}">
-    <link rel="stylesheet" href="{% static "css/animate.css" %}">
-    <link rel="stylesheet" href="{% static "css/main.css" %}">
-    <link rel="stylesheet" href="{% static "css/responsive.css" %}">
+  <!-- Favicons -->
+  <link href="{% static "img/favicon.png" %}" rel="icon">
+  <link href="{% static "img/apple-touch-icon.png" %}" rel="apple-touch-icon">
 
-    <link rel="stylesheet" href="{% static "css/styles.css" %}">
-  </head>
-  <body>
-  	<!-- Header Section Start -->
-    <header id="hero-area">    
-     <div class="overlay"></div>
-      <nav class="navbar navbar-expand-lg navbar-light fixed-top scrolling-navba bg-faded" id="white-bg">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,500,600,700,700i|Montserrat:300,400,500,600,700" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="{% static "lib/bootstrap/css/bootstrap.min.css" %}" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="{% static "lib/font-awesome/css/font-awesome.min.css" %}" rel="stylesheet">
+  <link href="{% static "lib/animate/animate.min.css" %}" rel="stylesheet">
+  <link href="{% static "lib/ionicons/css/ionicons.min.css" %}" rel="stylesheet">
+  <link href="{% static "lib/owlcarousel/assets/owl.carousel.min.css" %}" rel="stylesheet">
+  <link href="{% static "lib/lightbox/css/lightbox.min.css" %}" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="{% static "css/style.css" %}" rel="stylesheet">
+  <link href="{% static "css/style-cleaning.css" %}" rel="stylesheet">
+
+  <!-- =======================================================
+    Theme Name: Rapid
+    Theme URL: https://bootstrapmade.com/rapid-multipurpose-bootstrap-business-template/
+    Author: BootstrapMade.com
+    License: https://bootstrapmade.com/license/
+  ======================================================= -->
+</head>
+
+<body>
+  <!--==========================
+  Header
+  ============================-->
+  <header id="header">
+
+    <div id="topbar">
+      <div class="container">
+        <div class="social-links">
+          <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+          <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+          <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+          <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+
+      <div class="logo float-left">
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <h1 class="text-light"><a href="#intro" class="scrollto"><span>Cleaning</span></a></h1>
+        <!-- <a href="#header" class="scrollto"><img src="img/logo.png" alt="" class="img-fluid"></a> -->
+      </div>
+
+      <nav class="main-nav float-right d-none d-lg-block">
+        <ul>
+          <li class="active"><a href="#intro">Home</a></li>
+          <li><a href="#how-it-works">How It Works</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#footer">Contact Us</a></li>
+        </ul>
+      </nav><!-- .main-nav -->
+      
+    </div>
+  </header><!-- #header -->
+
+  <!--==========================
+    Intro Section
+  ============================-->
+  <section id="intro" class="clearfix">
+    <div class="container d-flex h-100">
+      <div class="row justify-content-center align-self-center">
+        <div class="col-md-12 intro-info order-md-first order-last">
+          <h2>Your favourite<br> <span>Cleaning</span> company</h2>
+          <div>
+            <a href="#footer" class="btn-get-started scrollto">Contact Us</a>
+          </div>
+        </div>
+  
+        
+      </div>
+
+    </div>
+  </section><!-- #intro -->
+
+  <main id="main">
+
+      <!--==========================
+      How It Works Section
+    ============================-->
+    <section id="how-it-works" class="section-bg">
         <div class="container">
-          <!-- Brand and toggle get grouped for better mobile display -->
-          <div class="navbar-header">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <a class="navbar-brand" href="index"><img class="img-logo" src="{% static "img/logo.png" %}" alt="DEMA Cleaning"></a>  
-          </div> 
-          <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav mr-auto w-100 justify-content-end">
-              <li class="nav-item">
-                <a class="nav-link" href="#hero-area">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#why">How it Works</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#services">Services</a>
-              </li>  
-              <li class="nav-item">
-                <a class="nav-link" href="#about">About us</a>
-              </li>       
-              <li class="nav-item">
-                <a class="nav-link" href="#team">Team</a>
-              </li>       
-              <li class="nav-item">
-                <a class="nav-link" href="#contact">Contact</a>
-              </li>
+          <div class="section-header">
+            <h3>How It Works</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut harum totam quasi. Odio dolor, soluta molestiae ab iste maiores consectetur nulla.</p>
+          </div>
+  
+          <div class="row" >
+            <div class="col-lg-8 col-lg-offset-2" style="margin: auto;">
+              <div class="row wow fadeInUp">
+                  <div class="col-lg-4 col-md-4" style="text-align: center;">
+                      <p><i class="icon ion-ios-calendar-outline" style="font-size: 82px; color: #1bb1dc;"></i></p>
+                  </div>
+                  <div class="col-lg-8 col-md-8" style="text-align: left;">
+                    <h4>Select the date and time</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis fugit id labore.</p>
+                  </div>
+              </div>
+
+              <div class="row wow fadeInUp" style="margin-top:20px;" data-wow-delay="0.2s">
+                  <div class="col-lg-4 col-md-4" style="text-align: center;">
+                      <p><i class="icon ion-ios-calculator" style="font-size: 82px; color: #1bb1dc;"></i></p>
+                  </div>  
+                  <div class="col-lg-8 col-md-8" style="text-align: left;">
+                    <h4>We’ll confirm your appointment</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis fugit id labore.</p>
+                  </div>
+              </div>
+
+              <div class="row wow fadeInUp" style="margin-top:20px;" data-wow-delay="0.3s">
+                  <div class="col-lg-4 col-md-4" style="text-align: center;">
+                      <p><i class="icon ion-ios-bell" style="font-size: 82px; color: #1bb1dc;"></i></p>
+                  </div>  
+                  <div class="col-lg-8 col-md-8" style="text-align: left;">
+                    <h4>Now its time to relax</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis fugit id labore.</p>
+                  </div>
+              </div>
+              
+            </div>
+
+
+          </div>
+  
+        </div>
+    </section><!-- #How It Works -->
+
+    <!--==========================
+      Services Section
+    ============================-->
+    <section id="services" class="section-bg">
+        <div class="container">
+  
+          <header class="section-header">
+            <h3>Services</h3>
+            <p>Laudem latine persequeris id sed, ex fabulas delectus quo. No vel partiendo abhorreant vituperatoribus.</p>
+          </header>
+  
+          <div class="row">
+  
+            <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-duration="1.4s">
+              <div class="box">
+                <div class="icon" style="background: #fceef3;"><i class="ion-ios-analytics-outline" style="color: #ff689b;"></i></div>
+                <h4 class="title"><a href="">Office cleaning</a></h4>
+                <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-duration="1.4s">
+              <div class="box">
+                <div class="icon" style="background: #fff0da;"><i class="ion-ios-bookmarks-outline" style="color: #e98e06;"></i></div>
+                <h4 class="title"><a href="">Pug</a></h4>
+                <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
+              </div>
+            </div>
+  
+            <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+              <div class="box">
+                <div class="icon" style="background: #e6fdfc;"><i class="ion-ios-paper-outline" style="color: #3fcdc7;"></i></div>
+                <h4 class="title"><a href="">Restaurant cleaning</a></h4>
+                <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+              <div class="box">
+                <div class="icon" style="background: #eafde7;"><i class="ion-ios-speedometer-outline" style="color:#41cf2e;"></i></div>
+                <h4 class="title"><a href="">Event cleaning</a></h4>
+                <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+              </div>
+            </div>
+  
+            <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-delay="0.2s" data-wow-duration="1.4s">
+              <div class="box">
+                <div class="icon" style="background: #e1eeff;"><i class="ion-ios-world-outline" style="color: #2282ff;"></i></div>
+                <h4 class="title"><a href="">House cleaning</a></h4>
+                <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-delay="0.2s" data-wow-duration="1.4s">
+              <div class="box">
+                <div class="icon" style="background: #ecebff;"><i class="ion-ios-clock-outline" style="color: #8660fe;"></i></div>
+                <h4 class="title"><a href="">Gym</a></h4>
+                <h4 class="title"><a href="">Gym</a></h4>
+                <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
+              </div>
+            </div>
+  
+          </div>
+  
+        </div>
+    </section><!-- #services -->
+
+    <!--==========================
+      About Us Section
+    ============================-->
+    <section id="about">
+
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-5 col-md-6">
+            <div class="about-img">
+              <img src="{% static "img/about-img.jpg" %}" alt="">
+            </div>
+          </div>
+
+          <div class="col-lg-7 col-md-6">
+            <div class="about-content">
+              <h2>About Us</h2>
+              <h3>Odio sed id eos et laboriosam consequatur eos earum soluta.</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <p>Aut dolor id. Sint aliquam consequatur ex ex labore. Et quis qui dolor nulla dolores neque. Aspernatur consectetur omnis numquam quaerat. Sed fugiat nisi. Officiis veniam molestiae. Et vel ut quidem alias veritatis repudiandae ut fugit. Est ut eligendi aspernatur nulla voluptates veniam iusto vel quisquam. Fugit ut maxime incidunt accusantium totam repellendus eum error. Et repudiandae eum iste qui et ut ab alias.</p>
+              <ul>
+                <li><i class="ion-android-checkmark-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                <li><i class="ion-android-checkmark-circle"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+                <li><i class="ion-android-checkmark-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section><!-- #about -->
+
+    <!--==========================
+      Why Us Section
+    ============================-->
+    <section id="why-us" class="wow fadeIn">
+      <div class="container-fluid">
+        
+        <header class="section-header">
+          <h3>Why choose us?</h3>
+          <p>Laudem latine persequeris id sed, ex fabulas delectus quo. No vel partiendo abhorreant vituperatoribus.</p>
+        </header>
+
+        <div class="row">
+
+          <div class="col-lg-6">
+            <div class="why-us-img">
+              <img src="{% static "img/why-us.jpg" %}" alt="" class="img-fluid">
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="why-us-content">
+              <p>Molestiae omnis numquam corrupti omnis itaque. Voluptatum quidem impedit. Odio dolorum exercitationem est error omnis repudiandae ad dolorum sit.</p>
+              <p>
+                Explicabo repellendus quia labore. Non optio quo ea ut ratione et quaerat. Porro facilis deleniti porro consequatur
+                et temporibus. Labore est odio.
+
+                Odio omnis saepe qui. Veniam eaque ipsum. Ea quia voluptatum quis explicabo sed nihil repellat..
+              </p>
+
+              <div class="features wow bounceInUp clearfix">
+                <i class="fa fa-diamond" style="color: #f058dc;"></i>
+                <h4>Corporis dolorem</h4>
+                <p>Commodi quia voluptatum. Est cupiditate voluptas quaerat officiis ex alias dignissimos et ipsum. Soluta at enim modi ut incidunt dolor et.</p>
+              </div>
+
+              <div class="features wow bounceInUp clearfix">
+                <i class="fa fa-object-group" style="color: #ffb774;"></i>
+                <h4>Eum ut aspernatur</h4>
+                <p>Molestias eius rerum iusto voluptas et ab cupiditate aut enim. Assumenda animi occaecati. Quo dolore fuga quasi autem aliquid ipsum odit. Perferendis doloremque iure nulla aut.</p>
+              </div>
+              
+              <div class="features wow bounceInUp clearfix">
+                <i class="fa fa-language" style="color: #589af1;"></i>
+                <h4>Voluptates dolores</h4>
+                <p>Voluptates nihil et quis omnis et eaque omnis sint aut. Ducimus dolorum aspernatur. Totam dolores ut enim ullam voluptas distinctio aut.</p>
+              </div>
+              
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="container">
+        <div class="row counters">
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-toggle="counter-up">274</span>
+            <p>Clients</p>
+          </div>
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-toggle="counter-up">421</span>
+            <p>Projects</p>
+          </div>
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-toggle="counter-up">1,364</span>
+            <p>Hours Of Support</p>
+          </div>
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-toggle="counter-up">18</span>
+            <p>Hard Workers</p>
+          </div>
+  
+        </div>
+
+      </div>
+    </section>
+
+    <!--==========================
+      Call To Action Section
+    ============================-->
+    <section id="call-to-action" class="wow fadeInUp">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-9 text-center text-lg-left">
+            <h3 class="cta-title">Contact Us</h3>
+            <p class="cta-text"> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+          <div class="col-lg-3 cta-btn-container text-center">
+            <a class="cta-btn align-middle scrollto" href="#footer">Contact Us</a>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- #call-to-action -->
+
+
+    <!--==========================
+      Portfolio Section
+    ============================-->
+    <section id="portfolio" class="section-bg">
+      <div class="container">
+
+        <header class="section-header">
+          <h3 class="section-title">Our Portfolio</h3>
+        </header>
+
+        <div class="row">
+          <div class="col-lg-12">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-app">Pug</li>
+              <li data-filter=".filter-card">House cleaning</li>
+              <li data-filter=".filter-web">Gym</li>
             </ul>
           </div>
         </div>
-      </nav>  
 
-      <!-- Mobile Menu Start -->
-      <ul class="mobile-menu">
-        <li>
-          <a href="#hero-area">Home</a>
-        </li>
-        <li>
-          <a href="#why">How it Works</a>
-        </li>
-        <li>
-          <a href="#services">Services</a>
-        </li>
-        <li>
-          <a href="#about">About us</a>
-        </li>
-        <li>
-          <a href="#team">Team</a>
-        </li>
-        <li>
-          <a href="#contact">Contact</a>
-        </li>
-      </ul>
-      <!-- Mobile Menu End -->   
-       
-      <div class="container">      
-        <div class="row justify-content-md-center">
-          <div class="col-md-10">
-            <div class="contents text-left">
-              <h1 class="main-title wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">DEMA Cleaning</h1>
-              <p class="lead wow fadeIn" data-wow-duration="1000ms" data-wow-delay="400ms">We have been running this business for more than 3 years.
-                We provide a professional service by responding to every customers's specific need.
-                Honesty, Reliability and Transparency are the value we have built our business during these years. We are looking to grow our business and the only way to do so is by keep on making people happy about our services.
+        <div class="row portfolio-container">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="{% static "img/portfolio/img1.jpg" %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a href="#">App 1</a></h4>
+                <p>App</p>
+                <div>
+                  <a href="{% static "img/portfolio/img1.jpg" %}" data-lightbox="portfolio" data-title="App 1" class="link-preview" title="Preview"><i class="ion ion-eye"></i></a>
+                  <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web" data-wow-delay="0.1s">
+            <div class="portfolio-wrap">
+              <img src="{% static "img/portfolio/img2.jpg" %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a href="#">Web 3</a></h4>
+                <p>Web</p>
+                <div>
+                  <a href="{% static "img/portfolio/img2.jpg" %}" class="link-preview" data-lightbox="portfolio" data-title="Web 3" title="Preview"><i class="ion ion-eye"></i></a>
+                  <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app" data-wow-delay="0.2s">
+            <div class="portfolio-wrap">
+              <img src="{% static "img/portfolio/img3.jpg" %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a href="#">App 2</a></h4>
+                <p>App</p>
+                <div>
+                  <a href="{% static "img/portfolio/img3.jpg" %}" class="link-preview" data-lightbox="portfolio" data-title="App 2" title="Preview"><i class="ion ion-eye"></i></a>
+                  <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="{% static "img/portfolio/img4.jpg" %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a href="#">Card 2</a></h4>
+                <p>Card</p>
+                <div>
+                  <a href="{% static "img/portfolio/img4.jpg" %}" class="link-preview" data-lightbox="portfolio" data-title="Card 2" title="Preview"><i class="ion ion-eye"></i></a>
+                  <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web" data-wow-delay="0.1s">
+            <div class="portfolio-wrap">
+              <img src="{% static "img/portfolio/img5.jpg" %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a href="#">Web 2</a></h4>
+                <p>Web</p>
+                <div>
+                  <a href="{% static "img/portfolio/img5.jpg" %}" class="link-preview" data-lightbox="portfolio" data-title="Web 2" title="Preview"><i class="ion ion-eye"></i></a>
+                  <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app" data-wow-delay="0.2s">
+            <div class="portfolio-wrap">
+              <img src="{% static "img/portfolio/img6.jpg" %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a href="#">App 3</a></h4>
+                <p>App</p>
+                <div>
+                  <a href="{% static "img/portfolio/img6.jpg" %}" class="link-preview" data-lightbox="portfolio" data-title="App 3" title="Preview"><i class="ion ion-eye"></i></a>
+                  <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="{% static "img/portfolio/img7.jpg" %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a href="#">Card 1</a></h4>
+                <p>Card</p>
+                <div>
+                  <a href="{% static "img/portfolio/img7.jpg" %}" class="link-preview" data-lightbox="portfolio" data-title="Card 1" title="Preview"><i class="ion ion-eye"></i></a>
+                  <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card" data-wow-delay="0.1s">
+            <div class="portfolio-wrap">
+              <img src="{% static "img/portfolio/img8.jpg" %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a href="#">Card 3</a></h4>
+                <p>Card</p>
+                <div>
+                  <a href="{% static "img/portfolio/img8.jpg" %}" class="link-preview" data-lightbox="portfolio" data-title="Card 3" title="Preview"><i class="ion ion-eye"></i></a>
+                  <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web" data-wow-delay="0.2s">
+            <div class="portfolio-wrap">
+              <img src="{% static "img/portfolio/img9.jpg" %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a href="#">Web 1</a></h4>
+                <p>Web</p>
+                <div>
+                  <a href="{% static "img/portfolio/img9.jpg" %}" class="link-preview" data-lightbox="portfolio" data-title="Web 1" title="Preview"><i class="ion ion-eye"></i></a>
+                  <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- #portfolio -->
+
+    <!--==========================
+      Clients Section
+    ============================-->
+    <section id="testimonials">
+      <div class="container">
+
+        <header class="section-header">
+          <h3>Testimonials</h3>
+        </header>
+
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+
+            <div class="owl-carousel testimonials-carousel wow fadeInUp">
+    
+              <div class="testimonial-item">
+                <img src="{% static "img/testimonial-1.jpg" %}" class="testimonial-img" alt="">
+                <h3>Sally</h3>
+                <h4>Last edited May 3, 2019 </h4>
+                <p>
+                    Efficient team came in and got our new home ready for move in
                 </p>
-              <a href="#contact" class="btn-cleanig btn btn-border wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="400ms">Contact us</a>
-              <div class="banner_bottom_btn wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="700ms">
               </div>
-            </div>        
-          </div>
-        </div> 
-      </div> 
+    
+              <div class="testimonial-item">
+                <img src="{% static "img/testimonial-2.jpg" %}" class="testimonial-img" alt="">
+                <h3>Jay</h3>
+                <h4>Last edited Apr 12, 2019 </h4>
+                <p>
+                    Thank you Dema Professional Cleaning Team for making my house spotless! It was lovely to meet the whole team. Very efficient and easy to deal with. 
+                </p>
+              </div>
+    
+              <div class="testimonial-item">
+                <img src="{% static "img/testimonial-3.jpg" %}" class="testimonial-img" alt="">
+                <h3>Aditya</h3>
+                <h4>Last edited Apr 11, 2019 </h4>
+                <p>
+                    I hired them for my apartment cleaning. They are punctual and hardworking. You guys got a costumer for lifelong. Keep it up. 
+                </p>
+              </div>
+    
+              <div class="testimonial-item">
+                <img src="{% static "img/testimonial-4.jpg" %}" class="testimonial-img" alt="">
+                <h3>Ricardo</h3>
+                <h4>Last edited Apr 7, 2019 </h4>
+                <p>
+                    Amazing service, quick and reliable. I’m using them weekly in my office and don’t regreat. Thank you guys
+                </p>
+              </div>
 
-    </header>
-    <!-- Header Section End --> 
+            </div>
 
-     <!-- Why Section Start -->
-     <div id="why" class="why">
-      <div class="container">        
-        <div class="row">
-          <div class="col-md-6 col-sm-6 col-xs-12">
-            <div class="section-header">
-              <h3 class="section-subtitle wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">Our professional service include</h3>
-              <h2 class="section-title wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">Why choose Us</h2>
-            </div>
-            <div class="why-item wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
-              <div class="icon">
-                <i class="icon-pencil"></i>
-              </div>
-              <div class="why-content">
-                <h3>Office cleaning</h3>
-                <!-- <p>Our key to success is the excellent quality of work That we hold across all our projects.</p> -->
-              </div>
-            </div>
-            <div class="why-item wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="500ms">
-              <div class="icon">
-                <i class="icon-pencil"></i>
-              </div>
-              <div class="why-content">
-                <h3>Pub & Restaurant cleaning</h3>
-              </div>
-            </div>
-            <div class="why-item wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="700ms">
-              <div class="icon">
-                <i class="icon-pencil"></i>
-              </div>
-              <div class="why-content">
-                <h3>Event cleaning</h3>
-              </div>
-            </div>
-            <div class="why-item wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="700ms">
-              <div class="icon">
-                <i class="icon-pencil"></i>
-              </div>
-              <div class="why-content">
-                <h3>House cleaning</h3>
-              </div>
-            </div>
-            <div class="why-item wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="700ms">
-              <div class="icon">
-                <i class="icon-pencil"></i>
-              </div>
-              <div class="why-content">
-                <h3>Gym</h3>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-sm-6 col-xs-12">
-            <div id="testimonial" class="wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
-              <div class="touch-slider" class="owl-carousel owl-theme">
-                <div class="item active text-center">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo conseq uatuis aute irure dolor.</p>                  
-                  <div class="client-info">
-                   <h2 class="client-name">Jhon Nash</h2>
-                   <h4 class="client-details">Founder & CEO, JN Inc.</h4>
-                  </div>                
-                  <img class="img-member" src="{% static "img/testimonial/img1.png" %}" alt=""> 
-                </div>
-                <div class="item text-center">      
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo conseq uatuis aute irure dolor.</p>            
-                  <div class="client-info">
-                   <h2 class="client-name">Jhon Nash</h2>
-                   <h4 class="client-details">Founder & CEO, JN Inc.</h4>
-                  </div>                
-                  <img class="img-member" src="{% static "img/testimonial/img2.png" %}" alt=""> 
-                </div>
-                <div class="item text-center"> 
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo conseq uatuis aute irure dolor.</p>                
-                  <div class="client-info">
-                   <h2 class="client-name">Jhon Nash</h2>
-                   <h4 class="client-details">Founder & CEO, JN Inc.</h4>
-                  </div>                
-                  <img class="img-member" src="{% static "img/testimonial/img3.png" %}" alt=""> 
-                </div>
-              </div>
-            </div>
           </div>
         </div>
-      </div>
-    </div>
-    <!-- Why Section End -->
 
-    <!-- Services Section Start -->
-    <section id="services" class="services section">
+
+      </div>
+    </section><!-- #testimonials -->
+
+      <!--==========================
+      Frequently Asked Questions Section
+    ============================-->
+    <section id="faq">
       <div class="container">
-        <div class="section-header">
-          <h3 class="section-subtitle wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">Let Us Help You</h3>
-          <h2 class="section-title wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">Our professional service include</h2>
-        </div>
-        <div class="row">
-          <div class="col-md-3 col-sm-6 col-xs-12">
-            <div class="service-box wow fadeInLeft text-center" data-wow-duration="1000ms" data-wow-delay="300ms">
-              <div class="icon">
-                <i class="icon-settings"></i>
-              </div>
-              <h3><a href="#">office cleaning</a></h3>
-              <p>Lorem ipsum dolor sit amet, conse ctetur adipisicing</p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6 col-xs-12">
-            <div class="service-box wow fadeInLeft text-center" data-wow-duration="1000ms" data-wow-delay="450ms">
-              <div class="icon">
-                <i class="icon-graph"></i>
-              </div>
-              <h3><a href="#">pub & restaurant cleaning</a></h3>
-              <p>Lorem ipsum dolor sit amet, conse ctetur adipisicing</p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6 col-xs-12">
-            <div class="service-box wow fadeInLeft text-center" data-wow-duration="1000ms" data-wow-delay="550ms">
-              <div class="icon">
-                <i class="icon-camera"></i>
-              </div>
-              <h3><a href="#">event cleaning</a></h3>
-              <p>Lorem ipsum dolor sit amet, conse ctetur adipisicing</p>
-            </div>
-          </div>
-           <div class="col-md-3 col-sm-6 col-xs-12">
-            <div class="service-box wow fadeInLeft text-center" data-wow-duration="1000ms" data-wow-delay="650ms">
-              <div class="icon">
-                <i class="icon-screen-tablet"></i>
-              </div>
-              <h3><a href="#">house cleaning</a></h3>
-              <p>Lorem ipsum dolor sit amet, conse ctetur adipisicing</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Services Section End -->
+        <header class="section-header">
+          <h3>Frequently Asked Questions</h3>
+          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+        </header>
 
-    <!-- About Section Start -->
-    <section id="about" class="section">
-      <div class="container">
-        <div class="section-header">
-          <h3 class="section-subtitle wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">Who We Are</h3>
-          <h2 class="section-title wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">About Us</h2>
-        </div>
-        <div class="row">
-          <div class="col-md-6 wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="300ms">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
-            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
-            <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
-          </div>
-        </div>
-        <div class="counters">
-          <div class="row"> 
-            <div class="col-sm-6 col-md-3 col-lg-3">
-              <div class="wow fadeInUp" data-wow-delay=".2s">
-                <div class="facts-item">
-                  <div class="fact-count">
-                    <h3><span class="counter">4452</span></h3>
-                    <h4>Project Done</h4>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-6 col-md-3 col-lg-3">
-              <div class="wow fadeInUp" data-wow-delay=".4s">
-                <div class="facts-item">
-                  <div class="fact-count">
-                    <h3><span class="counter">367</span></h3>
-                    <h4>Happy Clients</h4>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-6 col-md-3 col-lg-3">
-              <div class="wow fadeInUp" data-wow-delay=".6s">
-                <div class="facts-item">
-                  <div class="fact-count">
-                    <h3><span class="counter">965</span></h3>
-                    <h4>Working Hours</h4>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-6 col-md-3 col-lg-3">
-              <div class="wow fadeInUp" data-wow-delay=".8s">
-                <div class="facts-item">
-                  <div class="fact-count">
-                    <h3><span class="counter">280</span></h3>
-                    <h4>Followers</h4>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="img-about-out">
-        <img src="{% static "img/about-img.png" %}" alt="">
-      </div>
-    </section>
-    <!-- About Section End -->
-
-    <!-- Team Section Start  -->
-    <section id="team" class="team-area section">
-      <div class="container">
-        <div class="section-header">
-          <h3 class="section-subtitle wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">Meet Our Team</h3>
-          <h2 class="section-title wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">Team Members</h2>
-        </div>
-        <div class="row">
-          <div class="col-md-4 col-sm-6 col-xs-12">
-            <div class="single-team wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="400ms">
-              <img src="{% static "img/team/1.png" %}" alt="">
-              <div class="team-content">
-                <h4 class="tem-member">John Doe</h4>
-                <h6>web developer</h6>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <ul class="team-social">
-                  <li><a href="#"><i class="fa fa-facebook"></i></a>
-                  </li>
-                  <li><a href="#"><i class="fa fa-twitter"></i></a>
-                  </li>
-                  <li><a href="#"><i class="fa fa-google-plus"></i></a>
-                  </li>
-                  <li><a href="#"><i class="fa fa-linkedin"></i></a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-6 col-xs-12">
-            <div class="single-team wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="500ms">
-              <img src="{% static "img/team/2.png" %}" alt="">
-              <div class="team-content">
-                <h4 class="tem-member">Sommer Christian</h4>
-                <h6>social marketing</h6>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <ul class="team-social">
-                  <li><a href="#"><i class="fa fa-facebook"></i></a>
-                  </li>
-                  <li><a href="#"><i class="fa fa-twitter"></i></a>
-                  </li>
-                  <li><a href="#"><i class="fa fa-google-plus"></i></a>
-                  </li>
-                  <li><a href="#"><i class="fa fa-linkedin"></i></a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-6 col-xs-12">
-            <div class="single-team wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="400ms">
-              <img src="{% static "img/team/3.png" %}" alt="">
-              <div class="team-content">
-                <h4 class="tem-member">Ben Davis</h4>
-                <h6>Frontend Developer</h6>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <ul class="team-social">
-                  <li><a href="#"><i class="fa fa-facebook"></i></a>
-                  </li>
-                  <li><a href="#"><i class="fa fa-twitter"></i></a>
-                  </li>
-                  <li><a href="#"><i class="fa fa-google-plus"></i></a>
-                  </li>
-                  <li><a href="#"><i class="fa fa-linkedin"></i></a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Team Section End  -->
-
-    <!-- Contact Icon Start -->
-    <div id="contact" class="section contact-icon">
-      <div class="overlay"></div>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4 col-sm-4">
-            <div class="box-icon wow fadeInUp" data-wow-duration="1200ms" data-wow-delay="300ms">
-              <div class="icon icon-white">
-                <i class="icon-map"></i>
-              </div>
+        <ul id="faq-list" class="wow fadeInUp">
+          <li>
+            <a data-toggle="collapse" class="collapsed" href="#faq1">Why should a customer hire you over another service provider?<i class="ion-android-remove"></i></a>
+            <div id="faq1" class="collapse" data-parent="#faq-list">
               <p>
-                Avenue C, Block.04, DW, USA
+                  We have more than 3 years of experience and we make sure 100% of satisfaction for our customers . We provide a high quality service with affordable price.
               </p>
             </div>
-          </div>
-          <div class="col-md-4 col-sm-4">
-            <div class="box-icon wow fadeInUp" data-wow-duration="1200ms" data-wow-delay="500ms">
-              <div class="icon icon-white">
-                <i class="icon-envelope"></i>
-              </div>
-              <p>
-                info@yourdamainname.com 
-              </p>
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-4">
-            <div class="box-icon wow fadeInUp" data-wow-duration="1200ms" data-wow-delay="700ms">
-              <div class="icon icon-white">
-                <i class="icon-phone"></i>
-              </div>
-              <p>
-                (+699)1234-7575-45 
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Contact Icon End -->
+          </li>
 
-    <!-- Footer Section Start -->
-    <footer>
-      <!-- Footer Area Start -->
-      <section class="footer-Content">
-        <div class="container wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
-          <h3 class="logo-title">DEMA Cleaning</h3>
-          <div class="row">
-            <div class="col-md-4 col-sm-6 col-xs-12">
-              <div class="widget">                
-                <div class="textwidget">
-                  <p>Lorem ipsum dolor sit amet, con sectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.Lorem ipsum dolor sit amet, con sectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+          <li>
+            <a data-toggle="collapse" href="#faq2" class="collapsed">What experience, skills, qualifications or training do you have to make you the right person for the job? <i class="ion-android-remove"></i></a>
+            <div id="faq2" class="collapse" data-parent="#faq-list">
+              <p>
+                  All of our staff are highly qualified and trained with professional knowledge and skills. All the sites at the end of the service will be fully inspected by our experienced nominated cleaning supervisor.
+              </p>
+            </div>
+          </li>
+
+          <li>
+            <a data-toggle="collapse" href="#faq3" class="collapsed">Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi? <i class="ion-android-remove"></i></a>
+            <div id="faq3" class="collapse" data-parent="#faq-list">
+              <p>
+                Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
+              </p>
+            </div>
+          </li>
+
+          <li>
+            <a data-toggle="collapse" href="#faq4" class="collapsed">Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla? <i class="ion-android-remove"></i></a>
+            <div id="faq4" class="collapse" data-parent="#faq-list">
+              <p>
+                Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
+              </p>
+            </div>
+          </li>
+
+          <li>
+            <a data-toggle="collapse" href="#faq5" class="collapsed">Tempus quam pellentesque nec nam aliquam sem et tortor consequat? <i class="ion-android-remove"></i></a>
+            <div id="faq5" class="collapse" data-parent="#faq-list">
+              <p>
+                Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in
+              </p>
+            </div>
+          </li>
+
+          <li>
+            <a data-toggle="collapse" href="#faq6" class="collapsed">Tortor vitae purus faucibus ornare. Varius vel pharetra vel turpis nunc eget lorem dolor? <i class="ion-android-remove"></i></a>
+            <div id="faq6" class="collapse" data-parent="#faq-list">
+              <p>
+                Laoreet sit amet cursus sit amet dictum sit amet justo. Mauris vitae ultricies leo integer malesuada nunc vel. Tincidunt eget nullam non nisi est sit amet. Turpis nunc eget lorem dolor sed. Ut venenatis tellus in metus vulputate eu scelerisque. Pellentesque diam volutpat commodo sed egestas egestas fringilla phasellus faucibus. Nibh tellus molestie nunc non blandit massa enim nec.
+              </p>
+            </div>
+          </li>
+
+        </ul>
+
+      </div>
+    </section><!-- #faq -->
+
+  </main>
+
+  <!--==========================
+    Footer
+  ============================-->
+  <footer id="footer" class="section-bg">
+    <div class="footer-top">
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-lg-6">
+
+            <div class="row">
+
+                <div class="col-sm-6">
+
+                  <div class="footer-info">
+                    <h3>Cleaning</h3>
+                    <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus. Scelerisque felis imperdiet proin fermentum leo. Amet volutpat consequat mauris nunc congue.</p>
+                  </div>
+
+                  <div class="footer-newsletter">
+                    <h4>Our Newsletter</h4>
+                    <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna veniam enim veniam illum dolore legam minim quorum culpa amet magna export quem.</p>
+                    <form action="" method="post">
+                      <input type="email" name="email"><input type="submit"  value="Subscribe">
+                    </form>
+                  </div>
+
                 </div>
-                <form class="subscribe-box">
-                  <input placeholder="Your email" type="text">
-                  <input class="btn-system" value="Send" type="submit">
-                </form>
-              </div>
+
+                <div class="col-sm-6">
+                  <div class="footer-links">
+                    <h4>Useful Links</h4>
+                    <ul>
+                      <li><a class="scrollto" href="#intro">Home</a></li>
+                      <li><a class="scrollto" href="#how-it-works">How It Works</a></li>
+                      <li><a class="scrollto" href="#services">Services</a></li>
+                      <li><a class="scrollto" href="#about">About Us</a></li>
+                      <li><a class="scrollto" href="#portfolio">Portfolio</a></li>
+                      <li><a class="scrollto" href="#footer">Contact Us</a></li>
+                    </ul>
+                  </div>
+                  <div class="footer-links">
+                    <h4>Contact Us</h4>
+                    <p>
+                      A108 Adam Street <br>
+                      New York, NY 535022<br>
+                      United States <br>
+                      <strong>Phone:</strong> +1 5589 55488 55<br>
+                      <strong>Email:</strong> info@example.com<br>
+                    </p>
+                  </div>
+
+                  <div class="social-links">
+                    <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+                    <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+                    <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+                    <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+                  </div>
+
+                </div>
+
             </div>
-            <div class="col-md-2 col-sm-6 col-xs-12">
-              <div class="widget">
-                <h3 class="block-title">Links</h3>
-                <ul class="menu">
-                  <li><a href="#">About Us</a></li>
-                  <li><a href="#">Services</a></li>
-                  <li><a href="#">Works</a></li>                
-                  <li><a href="#">Pricing</a></li>  
-                  <li><a href="#">Contact</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-md-2 col-sm-6 col-xs-12">
-              <div class="widget">
-                <h3 class="block-title">Services</h3>
-                <ul class="menu">
-                  <li><a href="#">Service# 0</a></li>
-                  <li><a href="#">Service# 1</a></li>
-                  <li><a href="#">Service# 2</a></li>
-                  <li><a href="#">Service# 3</a></li>
-                  <li><a href="#">Service# 4</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-md-4 col-sm-6 col-xs-12">
-              <div class="widget">
-                <h3 class="block-title">Flicker Gallery</h3>
-                <ul class="featured-list">
-                  <li>
-                    <a href="#"><img alt="" src="{% static "img/featured/img1.jpg" %}"></a>
-                  </li>
-                  <li>
-                    <a href="#"><img alt="" src="{% static "img/featured/img2.jpg" %}"></a>
-                  </li>
-                  <li>
-                    <a href="#"><img alt="" src="{% static "img/featured/img3.jpg" %}"></a>
-                  </li>
-                  <li>
-                    <a href="#"><img alt="" src="{% static "img/featured/img4.jpg" %}"></a>
-                  </li>
-                  <li>
-                    <a href="#"><img alt="" src="{% static "img/featured/img5.jpg" %}"></a>
-                  </li>
-                  <li>
-                    <a href="#"><img alt="" src="{% static "img/featured/img6.jpg" %}"></a>
-                  </li>
-                  <li>
-                    <a href="#"><img alt="" src="{% static "img/featured/img7.jpg" %}"></a>
-                  </li>
-                  <li>
-                    <a href="#"><img alt="" src="{% static "img/featured/img8.jpg" %}"></a>
-                  </li>
-                </ul>             
-              </div>
-            </div>
+
           </div>
-        </div>
-      </section>
-      <!-- Footer area End -->
-      
-      <!-- Copyright Start  -->
-      <div id="copyright">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12">
-              <div class="site-info pull-left wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="300ms">
-                <p>Develop by <a rel="nofollow" href="http://graygrids.com">Benjamin Peñaloza & Franklin Morales 2019</a></p>
-              </div>              
-              <div class="bottom-social-icons social-icon pull-right  wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="300ms">                 
-                <a class="twitter" href="https://twitter.com/GrayGrids"><i class="fa fa-twitter"></i></a>
-                <a class="facebook"" href="https://web.facebook.com/GrayGrids"><i class="fa fa-facebook"></i></a> 
-                <a class="google-plus"" href="https://plus.google.com/+GrayGrids"><i class="fa fa-google-plus"></i></a>
-                <a class="linkedin" href="https://www.linkedin.com/GrayGrids"><i class="fa fa-linkedin"></i></a>
-                <a class="dribble" href="https://dribbble.com/GrayGrids"><i class="fa fa-dribbble"></i></a>
-              </div>
+
+          <div class="col-lg-6">
+
+            <div class="form">
+              
+              <h4>Send us a message</h4>
+              <p>Eos ipsa est voluptates. Nostrum nam libero ipsa vero. Debitis quasi sit eaque numquam similique commodi harum aut temporibus.</p>
+              <form action="" method="post" role="form" class="contactForm">
+                <div class="form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                  <div class="validation"></div>
+                </div>
+                <div class="form-group">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                  <div class="validation"></div>
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                  <div class="validation"></div>
+                </div>
+                <div class="form-group">
+                  <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                  <div class="validation"></div>
+                </div>
+
+                <div id="sendmessage">Your message has been sent. Thank you!</div>
+                <div id="errormessage"></div>
+
+                <div class="text-center"><button type="submit" title="Send Message">Send Message</button></div>
+              </form>
             </div>
+
           </div>
+
+          
+
         </div>
-      </div>
-      <!-- Copyright End -->
 
-    </footer>
-    <!-- Footer Section End --> 
-
-    <!-- Go To Top Link -->
-    <a href="#" class="back-to-top">
-      <i class="fa fa-arrow-up"></i>
-    </a>
-
-    <div id="loader">
-      <div class="cssload-thecube">
-        <div class="cssload-cube cssload-c1"></div>
-        <div class="cssload-cube cssload-c2"></div>
-        <div class="cssload-cube cssload-c4"></div>
-        <div class="cssload-cube cssload-c3"></div>
       </div>
     </div>
 
-    <!-- jQuery first, then Tether, then Bootstrap JS. -->
-    <script src="{% static "js/jquery-min.js" %}"></script>
-    <script src="{% static "js/tether.min.js" %}"></script>
-    <script src="{% static "js/bootstrap.min.js" %}"></script>
-    <script src="{% static "js/mixitup.min.js" %}"></script>
-    <script src="{% static "js/owl.carousel.min.js" %}"></script>    
-    <script src="{% static "js/jquery.slicknav.js" %}"></script>    
-    <script src="{% static "js/jquery.nav.js" %}"></script>    
-    <script src="{% static "js/smooth-scroll.js" %}"></script>    
-    <script src="{% static "js/smooth-on-scroll.js" %}"></script>    
-    <script src="{% static "js/wow.js" %}"></script>    
-    <script src="{% static "js/jquery.counterup.min.js" %}"></script>    
-    <script src="{% static "js/waypoints.min.js" %}"></script>    
-    <script src="{% static "js/main.js" %}"></script>
-  </body>
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong>Rapid</strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!--
+          All the links in the footer should remain intact.
+          You can delete the links only if you purchased the pro version.
+          Licensing information: https://bootstrapmade.com/license/
+          Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Rapid
+        -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+  </footer><!-- #footer -->
+
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+  <!-- Uncomment below i you want to use a preloader -->
+  <!-- <div id="preloader"></div> -->
+
+  <!-- JavaScript Libraries -->
+  <script src="{% static "lib/jquery/jquery.min.js" %}"></script>
+  <script src="{% static "lib/jquery/jquery-migrate.min.js" %}"></script>
+  <script src="{% static "lib/bootstrap/js/bootstrap.bundle.min.js" %}"></script>
+  <script src="{% static "lib/easing/easing.min.js" %}"></script>
+  <script src="{% static "lib/mobile-nav/mobile-nav.js" %}"></script>
+  <script src="{% static "lib/wow/wow.min.js" %}"></script>
+  <script src="{% static "lib/waypoints/waypoints.min.js" %}"></script>
+  <script src="{% static "lib/counterup/counterup.min.js" %}"></script>
+  <script src="{% static "lib/owlcarousel/owl.carousel.min.js" %}"></script>
+  <script src="{% static "lib/isotope/isotope.pkgd.min.js" %}"></script>
+  <script src="{% static "lib/lightbox/js/lightbox.min.jslib/lightbox/js/lightbox.min.js" %}"></script>
+  <!-- Contact Form JavaScript File -->
+  <script src="{% static "contactform/contactform.js" %}"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="{% static "js/main.js" %}"></script>
+
+</body>
 </html>
