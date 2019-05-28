@@ -647,7 +647,7 @@ a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
     height: 100%;
     top: 0px;
     left: 0px;
-    background: rgba(38, 38, 71, 0.774);
+    background: rgba(199, 199, 199, 0.774);
     /* background: #40517e; */
     /* background: #1d213a; */
     opacity: 0.9; }
