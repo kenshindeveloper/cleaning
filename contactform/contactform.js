@@ -101,9 +101,11 @@ jQuery(document).ready(function($) {
       success: function(msg) {
         // alert(msg);
         if (msg == 'OK') {
+          console.log('hello\n');
           $("#sendmessage").addClass("show");
-          $("#errormessage").removeClass("show");
+          // $("#errormessage").removeClass("show");
           $('.contactForm').find("input, textarea").val("");
+          $('.contactForm').submit();
         } else {
           $("#sendmessage").removeClass("show");
           $("#errormessage").addClass("show");
