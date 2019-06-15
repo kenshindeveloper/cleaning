@@ -35,6 +35,81 @@
     Author: BootstrapMade.com
     License: https://bootstrapmade.com/license/
   ======================================================= -->
+
+
+  <style>
+      /* body {font-family: Arial, Helvetica, sans-serif;} */
+      
+      #myImg {
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+      
+      #myImg:hover {opacity: 0.7;}
+      
+      /* The Modal (background) */
+      .modal {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 998; /* Sit on top */
+        padding-top: 100px; /* Location of the box */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        /* overflow: auto; Enable scroll if needed */
+        background-color: rgb(0,0,0); /* Fallback color */
+        background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+      }
+      
+      /* Modal Content (image) */
+      .modal-content {
+        margin: auto;
+        display: block;
+        width: 80%;
+        max-width: 700px;
+      }
+      
+      /* Caption of Modal Image */
+      #caption {
+        margin: auto;
+        display: block;
+        width: 80%;
+        max-width: 700px;
+        text-align: center;
+        color: #ccc;
+        padding: 10px 0;
+        height: 150px;
+      }
+      
+      /* Add Animation */
+      .modal-content, #caption {  
+        -webkit-animation-name: zoom;
+        -webkit-animation-duration: 0.6s;
+        animation-name: zoom;
+        animation-duration: 0.6s;
+      }
+      
+      @-webkit-keyframes zoom {
+        from {-webkit-transform:scale(0)} 
+        to {-webkit-transform:scale(1)}
+      }
+      
+      @keyframes zoom {
+        from {transform:scale(0)} 
+        to {transform:scale(1)}
+      }
+      
+      /* 100% Image Width on Smaller Screens */
+      @media only screen and (max-width: 700px){
+        .modal-content {
+          width: 100%;
+        }
+      }
+      </style>
+
+
 </head>
 
 <body>
@@ -74,7 +149,7 @@
           <li><a href="#services">Services</a></li>
           <li><a href="#about">About Us</a></li>
           <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#footer">Contact Us</a></li>
+          <li><a href="#footer2">Contact Us</a></li>
         </ul>
       </nav><!-- .main-nav -->
       
@@ -90,7 +165,7 @@
         <div class="col-md-12 intro-info order-md-first order-last">
           <h2>Your favourite<br> <span>Cleaning</span> company</h2>
           <div>
-            <a href="#footer" class="btn-get-started scrollto">Contact Us</a>
+            <a href="#footer2" class="btn-get-started scrollto">Contact Us</a>
           </div>
         </div>
   
@@ -204,6 +279,8 @@
             
             <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-duration="1.4s">
               <div class="box">
+                <img src="img/sevices/house/1280x853-2.jpg" alt=""class="img-thumbnail" alt="Cinque Terre" width="304" height="236" style="border: 0px solid #dee2e6;border-radius: 0.5rem;">
+                <br><br>
                 <div class="icon" style="background: #ecebff;"><ion-icon name="done-all"  style="color: #8660fe;"></ion-icon></div>
                 <h4 class="title"><a href="">Standard Cleaning</a></h4>
                 <p class="description">There’s nothing standard about this cleaning service. Our professional team deliver an amazing clean you’ll look forward to each time.</p>
@@ -212,6 +289,8 @@
             </div>
             <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-duration="1.4s">
               <div class="box">
+                <img src="img/sevices/spring/640x426.jpg" alt=""class="img-thumbnail" alt="Cinque Terre" width="304" height="236" style="border: 0px solid #dee2e6;border-radius: 0.5rem;">
+                <br><br>
                 <div class="icon" style="background: #e6fdfc;"><ion-icon name="refresh-circle" style="color: #3fcdc7;" ></ion-icon></div>
                 <h4 class="title"><a href="">Spring Cleaning</a></h4>
                 <p class="description">Clear out the cobwebs with our Spring Cleaning service Our team will reset your home and freshen it right up every corner and leave it as renewed.</p>
@@ -220,9 +299,9 @@
             
             <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
               <div class="box">
-                <div class="icon" style="background: #fde6e6;">
-                  <span class="iconify" data-icon="simple-icons:airbnb" data-inline="false" style="font-size: xx-large;color: #FF5A5F;"></span>
-                  <!-- <ion-icon name="attach" style="color: #2282ff;"></ion-icon> --> </div> 
+                <img src="img/sevices/airbnb/640x426.jpg" alt=""class="img-thumbnail" alt="Cinque Terre" width="304" height="236" style="border: 0px solid #dee2e6;border-radius: 0.5rem;">
+                <br><br>
+                <div class="icon" style="background: #fde6e6;"><span class="iconify" data-icon="simple-icons:airbnb" data-inline="false" style="font-size: xx-large;color: #FF5A5F;"></span></div> 
                 <h4 class="title"><a href="">Airbnb Cleaning</a></h4>
                 <p class="description">Your Airbnb property deserves the same love and care you own home does. Your guests expect a standard that we always deliver.</p>
               </div>
@@ -232,14 +311,18 @@
 
             <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-duration="1.4s">
               <div class="box">
+                <img src="img/sevices/move/640x426.jpg" alt=""class="img-thumbnail" alt="Cinque Terre" width="304" height="236" style="border: 0px solid #dee2e6;border-radius: 0.5rem;">
+                <br><br>
                 <div class="icon" style="background: #fceef3;"><ion-icon name="logo-dropbox" style="color: #ff689b;"></ion-icon></div>
                 <h4 class="title"><a href="">End of the lease Cleaning</a></h4>
-                <p class="description">You move out, we clean up. The simplest way to get your bond back. Guaranteed!</p>
+                <!-- <p class="description">You move out, we clean up. The simplest way to get your bond back. Guaranteed!</p> -->
               </div>
             </div>
 
             <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-duration="1.4s">
               <div class="box">
+                <img src="img/sevices/office/640×426.jpg" alt=""class="img-thumbnail" alt="Cinque Terre" width="304" height="236" style="border: 0px solid #dee2e6;border-radius: 0.5rem;">
+                <br><br>
                 <div class="icon" style="background: #dae0e0;"><ion-icon name="desktop" style="color: #0a1d36d5;"></ion-icon></div>
                 <h4 class="title"><a href="">Office cleaning</a></h4>
                 <!-- <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p> -->
@@ -247,9 +330,21 @@
             </div>
 
             <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+              <div class="box ">
+                <img src="img/sevices/pub/640×426.jpg" alt=""class="img-thumbnail" alt="Cinque Terre" width="304" height="236" style="border: 0px solid #dee2e6;border-radius: 0.5rem;">
+                <br><br>
+                <div class="icon" style="background: #fbf293;"><ion-icon name="beer" style="color: #d89e46;"></ion-icon></div>
+                <h4 class="title"><a href="">Pub cleaning</a></h4>
+                <!-- <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p> -->
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
               <div class="box">
+                <img src="img/sevices/restaurant/640x426.jpg" alt=""class="img-thumbnail" alt="Cinque Terre" width="304" height="236" style="border: 0px solid #dee2e6;border-radius: 0.5rem;">
+                <br><br>
                 <div class="icon" style="background: #e6fdfc;"><ion-icon name="restaurant" style="color: #3fcdc7;"></ion-icon></div>
-                <h4 class="title"><a href="">Pug and Restaurant cleaning</a></h4>
+                <h4 class="title"><a href="">Restaurant cleaning</a></h4>
                 <!-- <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p> -->
               </div>
             </div>
@@ -258,6 +353,8 @@
 
             <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
               <div class="box">
+                <img src="img/sevices/event/640x426-1.jpg" alt=""class="img-thumbnail" alt="Cinque Terre" width="304" height="236" style="border: 0px solid #dee2e6;border-radius: 0.5rem;">
+                <br><br>
                 <div class="icon" style="background: #eafde7;"><ion-icon name="people"  style="color:#41cf2e;"></ion-icon></div>
                 <h4 class="title"><a href="">Event cleaning</a></h4>
                 <!-- <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p> -->
@@ -266,6 +363,8 @@
   
             <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-delay="0.2s" data-wow-duration="1.4s">
               <div class="box">
+                <img src="img/sevices/house/1280x853-1.jpg" alt=""class="img-thumbnail" alt="Cinque Terre" width="304" height="236" style="border: 0px solid #dee2e6;border-radius: 0.5rem;">
+                <br><br>
                 <div class="icon" style="background: #e1eeff;"><ion-icon name="home"  style="color: #2282ff;"></ion-icon></div>
                 <h4 class="title"><a href="">House cleaning</a></h4>
                 <!-- <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p> -->
@@ -273,6 +372,8 @@
             </div>
             <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-delay="0.2s" data-wow-duration="1.4s">
               <div class="box">
+                <img src="img/sevices/gym/640x426.jpg" alt=""class="img-thumbnail" alt="Cinque Terre" width="304" height="236" style="border: 0px solid #dee2e6;border-radius: 0.5rem;">
+                <br><br>
                 <div class="icon" style="background: #ecebff;"><ion-icon name="fitness" style="color: #8660fe;"></ion-icon></div>
                 <h4 class="title"><a href="">Gym</a></h4>
                 <!-- <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p> -->
@@ -422,7 +523,7 @@
             <p class="contact" style="font-weight: 400;"> We’re so secure you’re going to love us that we provide a 200% guarantee every single time!. </p> 
           </div>
           <div class="col-lg-3 cta-btn-container text-center">
-            <a class="cta-btn align-middle scrollto" href="#footer">Contact Us</a>
+            <a class="cta-btn align-middle scrollto" href="#footer2">Contact Us</a>
           </div>
         </div>
 
@@ -433,6 +534,7 @@
     <!--==========================
       Portfolio Section
     ============================-->
+    
     <section id="portfolio" class="section-bg">
       <div class="container">
 
@@ -444,139 +546,324 @@
           <div class="col-lg-12">
             <ul id="portfolio-flters">
               <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-app">Pug</li>
-              <li data-filter=".filter-card">House cleaning</li>
-              <li data-filter=".filter-web">Gym</li>
+              <li data-filter=".filter-standard">Standard</li>
+              <li data-filter=".filter-spring">Spring</li>
+              <li data-filter=".filter-airbnb">Airbnb</li>
+              <li data-filter=".filter-move">End of the lease</li>
+              <li data-filter=".filter-office">Office</li>
+              <li data-filter=".filter-pub">Pub</li>
+              <li data-filter=".filter-restaurant">Restaurant</li>
+              <li data-filter=".filter-event">Event</li>
+              <li data-filter=".filter-house">House</li>
+              <li data-filter=".filter-gym">Gym</li>
             </ul>
           </div>
         </div>
 
         <div class="row portfolio-container">
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="img/portfolio/img1.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4><a href="#">App 1</a></h4>
-                <p>App</p>
-                <div>
-                  <a href="img/portfolio/img1.jpg" data-lightbox="portfolio" data-title="App 1" class="link-preview" title="Preview"><i class="ion ion-eye"></i></a>
-                  <!-- <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a> -->
-                </div>
+          <!-- standard-->
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-standard filter-house" data-wow-delay="0.2s">
+              <div class="portfolio-wrap">
+                <img src="img/sevices/house/1280x853-1.jpg" class="img-fluid img-portfolio" alt="" >
               </div>
-            </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web" data-wow-delay="0.1s">
-            <div class="portfolio-wrap">
-              <img src="img/portfolio/img2.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4><a href="#">Web 3</a></h4>
-                <p>Web</p>
-                <div>
-                  <a href="img/portfolio/img2.jpg" class="link-preview" data-lightbox="portfolio" data-title="Web 3" title="Preview"><i class="ion ion-eye"></i></a>
-                  <!-- <!-- <!-- <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a> --> --> -->
-                </div>
+          <div class="col-lg-4 col-md-6 portfolio-item filter-standard filter-house" data-wow-delay="0.2s">
+              <div class="portfolio-wrap">
+                <img src="img/sevices/house/1280x853-2.jpg" class="img-fluid img-portfolio" alt="" >
               </div>
-            </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app" data-wow-delay="0.2s">
-            <div class="portfolio-wrap">
-              <img src="img/portfolio/img3.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4><a href="#">App 2</a></h4>
-                <p>App</p>
-                <div>
-                  <a href="img/portfolio/img3.jpg" class="link-preview" data-lightbox="portfolio" data-title="App 2" title="Preview"><i class="ion ion-eye"></i></a>
-                  <!-- <!-- <!-- <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a> --> --> -->
-                </div>
+          <div class="col-lg-4 col-md-6 portfolio-item filter-standard filter-house" data-wow-delay="0.2s">
+              <div class="portfolio-wrap">
+                <img src="img/sevices/house/img1.jpg" class="img-fluid img-portfolio" alt="" >
               </div>
-            </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="img/portfolio/img4.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4><a href="#">Card 2</a></h4>
-                <p>Card</p>
-                <div>
-                  <a href="img/portfolio/img4.jpg" class="link-preview" data-lightbox="portfolio" data-title="Card 2" title="Preview"><i class="ion ion-eye"></i></a>
-                  <!-- <!-- <!-- <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a> --> --> -->
-                </div>
+          <div class="col-lg-4 col-md-6 portfolio-item filter-standard filter-house" data-wow-delay="0.2s">
+              <div class="portfolio-wrap">
+                <img src="img/sevices/house/img10.jpg" class="img-fluid img-portfolio" alt="" >
               </div>
-            </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web" data-wow-delay="0.1s">
-            <div class="portfolio-wrap">
-              <img src="img/portfolio/img5.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4><a href="#">Web 2</a></h4>
-                <p>Web</p>
-                <div>
-                  <a href="img/portfolio/img5.jpg" class="link-preview" data-lightbox="portfolio" data-title="Web 2" title="Preview"><i class="ion ion-eye"></i></a>
-                  <!-- <!-- <!-- <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a> --> --> -->
-                </div>
+          <div class="col-lg-4 col-md-6 portfolio-item filter-standard" data-wow-delay="0.2s">
+              <div class="portfolio-wrap">
+                <img src="img/sevices/house/img12.jpg" class="img-fluid img-portfolio" alt="" >
               </div>
-            </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app" data-wow-delay="0.2s">
-            <div class="portfolio-wrap">
-              <img src="img/portfolio/img6.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4><a href="#">App 3</a></h4>
-                <p>App</p>
-                <div>
-                  <a href="img/portfolio/img6.jpg" class="link-preview" data-lightbox="portfolio" data-title="App 3" title="Preview"><i class="ion ion-eye"></i></a>
-                  <!-- <!-- <!-- <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a> --> --> -->
-                </div>
+          <div class="col-lg-4 col-md-6 portfolio-item filter-standard" data-wow-delay="0.2s">
+              <div class="portfolio-wrap">
+                <img src="img/sevices/house/img5.jpg" class="img-fluid img-portfolio" alt="" >
               </div>
-            </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="img/portfolio/img7.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4><a href="#">Card 1</a></h4>
-                <p>Card</p>
-                <div>
-                  <a href="img/portfolio/img7.jpg" %}" class="link-preview" data-lightbox="portfolio" data-title="Card 1" title="Preview"><i class="ion ion-eye"></i></a>
-                  <!-- <!-- <!-- <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a> --> --> -->
-                </div>
+          <div class="col-lg-4 col-md-6 portfolio-item filter-standard" data-wow-delay="0.2s">
+              <div class="portfolio-wrap">
+                <img src="img/sevices/house/img9.jpg" class="img-fluid img-portfolio" alt="" >
               </div>
-            </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card" data-wow-delay="0.1s">
-            <div class="portfolio-wrap">
-              <img src="img/portfolio/img8.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4><a href="#">Card 3</a></h4>
-                <p>Card</p>
-                <div>
-                  <a href="img/portfolio/img8.jpg" class="link-preview" data-lightbox="portfolio" data-title="Card 3" title="Preview"><i class="ion ion-eye"></i></a>
-                  <!-- <!-- <!-- <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a> --> --> -->
-                </div>
+
+          <!-- AIRBNB -->
+
+          
+          <div class="col-lg-4 col-md-6 portfolio-item filter-airbnb" data-wow-delay="0.2s">
+              <div class="portfolio-wrap">
+                <img src="img/sevices/airbnb/1280x853-1.jpg" class="img-fluid img-portfolio" alt="" >
               </div>
-            </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web" data-wow-delay="0.2s">
-            <div class="portfolio-wrap">
-              <img src="img/portfolio/img9.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4><a href="#">Web 1</a></h4>
-                <p>Web</p>
-                <div>
-                  <a href="img/portfolio/img9.jpg" class="link-preview" data-lightbox="portfolio" data-title="Web 1" title="Preview"><i class="ion ion-eye"></i></a>
-                  <!-- <!-- <!-- <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a> --> --> -->
-                </div>
+          <div class="col-lg-4 col-md-6 portfolio-item filter-airbnb" data-wow-delay="0.2s">
+              <div class="portfolio-wrap">
+                <img src="img/sevices/airbnb/1280x853-2.jpg" class="img-fluid img-portfolio" alt="" >
               </div>
-            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-airbnb" data-wow-delay="0.2s">
+              <div class="portfolio-wrap">
+                <img src="img/sevices/airbnb/1280x853-3.jpg" class="img-fluid img-portfolio" alt="" >
+              </div>
+          </div>
+
+          <!-- spring-->
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-spring" data-wow-delay="0.2s">
+              <div class="portfolio-wrap">
+                <img src="img/sevices/spring/640x426.jpg" class="img-fluid img-portfolio" alt="" >
+              </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-spring" data-wow-delay="0.2s">
+              <div class="portfolio-wrap">
+                <img src="img/sevices/spring/1280x853-1.jpg" class="img-fluid img-portfolio" alt="" >
+              </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-spring" data-wow-delay="0.2s">
+              <div class="portfolio-wrap">
+                <img src="img/sevices/spring/1280x853-2.jpg" class="img-fluid img-portfolio" alt="" >
+              </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-spring" data-wow-delay="0.2s">
+              <div class="portfolio-wrap">
+                <img src="img/sevices/spring/1280x853-3.jpg" class="img-fluid img-portfolio" alt="" >
+              </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-spring" data-wow-delay="0.2s">
+              <div class="portfolio-wrap">
+                <img src="img/sevices/spring/img13.jpg" class="img-fluid img-portfolio" alt="" >
+              </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-spring" data-wow-delay="0.2s">
+              <div class="portfolio-wrap">
+                <img src="img/sevices/spring/img7.jpg" class="img-fluid img-portfolio" alt="" >
+              </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-spring" data-wow-delay="0.2s">
+              <div class="portfolio-wrap">
+                <img src="img/sevices/spring/img8.jpg" class="img-fluid img-portfolio" alt="" >
+              </div>
+          </div>
+
+          <!-- End of the lease -->
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-move" data-wow-delay="0.2s">
+              <div class="portfolio-wrap">
+                <img src="img/sevices/move/640x426.jpg"img-fluid img-portfolio" alt="" >
+              </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-move" data-wow-delay="0.2s">
+              <div class="portfolio-wrap">
+                <img src="img/sevices/move/1280x853-1.jpg" class="img-fluid img-portfolio" alt="" >
+              </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-move" data-wow-delay="0.2s">
+              <div class="portfolio-wrap">
+                <img src="img/sevices/move/1280x853-2.jpg" class="img-fluid img-portfolio" alt="" >
+              </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-move" data-wow-delay="0.2s">
+              <div class="portfolio-wrap">
+                <img src="img/sevices/move/1280x853-3.jpg" class="img-fluid img-portfolio" alt="" >
+              </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-move" data-wow-delay="0.2s">
+              <div class="portfolio-wrap">
+                <img src="img/sevices/move/img11.jpg" class="img-fluid img-portfolio" alt="" >
+              </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-move" data-wow-delay="0.2s">
+              <div class="portfolio-wrap">
+                <img src="img/sevices/move/img14.jpg" class="img-fluid img-portfolio" alt="" >
+              </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-move" data-wow-delay="0.2s">
+              <div class="portfolio-wrap">
+                <img src="img/sevices/move/img2.jpg" class="img-fluid img-portfolio" alt="" >
+              </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-move" data-wow-delay="0.2s">
+              <div class="portfolio-wrap">
+                <img src="img/sevices/move/img3.jpg" class="img-fluid img-portfolio" alt="" >
+              </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-move" data-wow-delay="0.2s">
+              <div class="portfolio-wrap">
+                <img src="img/sevices/move/img4.jpg" class="img-fluid img-portfolio" alt="" >
+              </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-move" data-wow-delay="0.2s">
+              <div class="portfolio-wrap">
+                <img src="img/sevices/move/img6.jpg" class="img-fluid img-portfolio" alt="" >
+              </div>
+          </div>
+
+
+          <!-- office -->
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-office" data-wow-delay="0.2s">
+              <div class="portfolio-wrap">
+                <img src="img/sevices/office/640×426.jpg" class="img-fluid img-portfolio" alt="" >
+              </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-office" data-wow-delay="0.2s">
+              <div class="portfolio-wrap">
+                <img src="img/sevices/office/1280x853-1.jpg" class="img-fluid img-portfolio" alt="" >
+              </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-office" data-wow-delay="0.2s">
+              <div class="portfolio-wrap">
+                <img src="img/sevices/office/1280x853-2.jpg" class="img-fluid img-portfolio" alt="" >
+              </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-office" data-wow-delay="0.2s">
+              <div class="portfolio-wrap">
+                <img src="img/sevices/office/1280x853-3.jpg" class="img-fluid img-portfolio" alt="" >
+              </div>
+          </div>
+
+          <!-- pub -->
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-pub" data-wow-delay="0.2s">
+              <div class="portfolio-wrap">
+                <img src="img/sevices/pub/640×426.jpg" class="img-fluid img-portfolio" alt="" >
+              </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-pub" data-wow-delay="0.2s">
+              <div class="portfolio-wrap">
+                <img src="img/sevices/pub/1280×853-1.jpg" class="img-fluid img-portfolio" alt="" >
+              </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-pub" data-wow-delay="0.2s">
+              <div class="portfolio-wrap">
+                <img src="img/sevices/pub/1280x853-2.jpg" class="img-fluid img-portfolio" alt="" >
+              </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-pub" data-wow-delay="0.2s">
+              <div class="portfolio-wrap">
+                <img src="img/sevices/pub/1280x853-3.jpg" class="img-fluid img-portfolio" alt="" >
+              </div>
+          </div>
+
+          <!-- restaurant -->
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-restaurant" data-wow-delay="0.2s">
+              <div class="portfolio-wrap">
+                <img src="img/sevices/restaurant/640x426.jpg" class="img-fluid img-portfolio" alt="" >
+              </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-restaurant" data-wow-delay="0.2s">
+              <div class="portfolio-wrap">
+                <img src="img/sevices/restaurant/1280x853-1.jpg" class="img-fluid img-portfolio" alt="" >
+              </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-restaurant" data-wow-delay="0.2s">
+              <div class="portfolio-wrap">
+                <img src="img/sevices/restaurant/1280x853-2.jpg" class="img-fluid img-portfolio" alt="" >
+              </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-restaurant" data-wow-delay="0.2s">
+              <div class="portfolio-wrap">
+                <img src="img/sevices/restaurant/1280x853-3.jpg" class="img-fluid img-portfolio" alt="" >
+              </div>
+          </div>
+
+          <!-- event -->
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-event" data-wow-delay="0.2s">
+              <div class="portfolio-wrap">
+                <img src="img/sevices/event/640x426.jpg" class="img-fluid img-portfolio" alt="" >
+              </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-event" data-wow-delay="0.2s">
+              <div class="portfolio-wrap">
+                <img src="img/sevices/event/1280x853-1.jpg" class="img-fluid img-portfolio" alt="" >
+              </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-event" data-wow-delay="0.2s">
+              <div class="portfolio-wrap">
+                <img src="img/sevices/event/1280x853-2.jpg" class="img-fluid img-portfolio" alt="" >
+              </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-event" data-wow-delay="0.2s">
+              <div class="portfolio-wrap">
+                <img src="img/sevices/event/1280x853-3.jpg" class="img-fluid img-portfolio" alt="" >
+              </div>
+          </div>
+
+
+          <!-- gym -->
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-gym" data-wow-delay="0.2s">
+              <div class="portfolio-wrap">
+                <img src="img/sevices/gym/640x426.jpg" class="img-fluid img-portfolio" alt="" >
+              </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-gym" data-wow-delay="0.2s">
+              <div class="portfolio-wrap">
+                <img src="img/sevices/gym/1280x853-1.jpg" class="img-fluid img-portfolio" alt="" >
+              </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-gym" data-wow-delay="0.2s">
+              <div class="portfolio-wrap">
+                <img src="img/sevices/gym/1280x853-2.jpg" class="img-fluid img-portfolio" alt="" >
+              </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-gym" data-wow-delay="0.2s">
+              <div class="portfolio-wrap">
+                <img src="img/sevices/gym/1280x853-3.jpg" class="img-fluid img-portfolio" alt="" >
+              </div>
           </div>
 
         </div>
@@ -651,7 +938,7 @@
       <div class="container">
         <header class="section-header">
           <h3>Frequently Asked Questions</h3>
-          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+          <!-- <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p> -->
         </header>
 
         <ul id="faq-list" class="wow fadeInUp">
@@ -735,14 +1022,14 @@
                       <li><a class="scrollto" href="#services">Services</a></li>
                       <li><a class="scrollto" href="#about">About Us</a></li>
                       <li><a class="scrollto" href="#portfolio">Portfolio</a></li>
-                      <li><a class="scrollto" href="#footer">Contact Us</a></li>
+                      <li><a class="scrollto" href="#footer2">Contact Us</a></li>
                     </ul>
                   </div>
 
                 </div>
 
             </div>
-            <div class="row">
+            <div class="row" id="footer2">
               <div class="col-sm-12">
                 <div class="footer-links">
                     <h4>Contact Us</h4>
@@ -750,8 +1037,8 @@
                       Sydney<br>
                       NSW, 2000<br>
                       Australia <br>
-                      <strong>Phone:</strong> +61 435850790<br>
-                      <strong>Email:</strong> dema.professionalcleaning@gmail.com<br>
+                      <strong>Phone:</strong> <span style="font-size: large;"> +61 435850790 </span><br>
+                      <strong>Email:</strong>  <span style="font-size: large;"> dema.professionalcleaning@gmail.com </span><br>
                     </p>
                   </div>
 
@@ -788,14 +1075,11 @@
                   <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
                   <div class="validation"></div>
                 </div>
-
                 <div id="sendmessage">Your message has been sent. Thank you!</div>
                 <div id="errormessage"></div>
-
-                <div class="text-center"><button type="submit" title="Send Message">Send Message</button></div>
+                <div class="text-center"><button type="submit" title="Send Message" >Send Message</button></div>
               </form>
             </div>
-          </div>
 
           
 
@@ -819,6 +1103,15 @@
   <!-- Uncomment below i you want to use a preloader -->
   <!-- <div id="preloader"></div> -->
 
+  <!--==========================
+    modal
+  ============================-->
+  <div id="myModal" class="modal">
+      <img class="modal-content" id="img01">
+      <div id="caption"></div>
+  </div>
+
+
   <!-- JavaScript Libraries -->
   <script src="https://unpkg.com/ionicons@4.2.2/dist/ionicons.js"></script>
   <script src="lib/jquery/jquery.min.js"></script>
@@ -838,6 +1131,30 @@
   <!-- Template Main Javascript File -->
   <script src="js/main.js"></script>
 
+
+  <script>
+      var modal = document.getElementById("myModal");
+      var modalImg = document.getElementById("img01");
+      var captionText = document.getElementById("caption");
+      var testimonialsdiv = document.getElementById("testimonials");
+
+      $(".img-portfolio").on('click', function(event){
+          event.stopPropagation();
+          event.stopImmediatePropagation();
+
+          modal.style.display = "block";
+          modalImg.src = this.src;
+          captionText.innerHTML = this.alt;
+          testimonialsdiv.style.display = "none";
+      });
+      
+      var span = document.getElementsByClassName("modal")[0];
+      span.onclick = function() { 
+        modal.style.display = "none";
+        testimonialsdiv.style.display = "block";
+        modalImg.src = "";
+      }
+  </script>
 </body>
 </html>
 
